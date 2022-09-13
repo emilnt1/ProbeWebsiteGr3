@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {Button, Container, Grid, TextField} from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p> I am monkey </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <button>Login</button>
-      </header>
+    <div>
+
+
+        <Container>
+          <Grid container spacing={3} alignItems="center" justifyContent="center">
+            <Grid item>
+              <TextField></TextField>
+            </Grid>
+            <Grid item>
+              <Button variant="contained">Login</Button>
+            </Grid>
+          </Grid>
+        </Container>
+
     </div>
   );
 }
